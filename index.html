@@ -1,15 +1,18 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Final Project</title>
-    <!-- CSS libraries -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fullPage.css">
+  <meta charset="UTF-8">
+  <title>Final Project</title>
+  <!-- CSS libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fullPage.css">
 </head>
+
 <body>
   <!-- Wrapper -->
   <div id="fullpage">
@@ -21,19 +24,32 @@
     <div class="section" id="sect2">
       <!-- content here -->
       <h1>Surging Opportunity</h1>
-        <div id="hook">
-          <p>Remote work opportunities surged in the U.S. during the Covid-19 pandemic. And while the rate of remote work has tapered off since its peak in the late spring of 2020, it remains well above pre-pandemic levels.</p>
-          <!-- Visualization Placeholder -->
-          <div id="totals-vis"></div>
-          <!-- <img src="images/screenshot_totals.png" style="height: 65vh; margin:2.5em;"> -->
+      <div id="hook">
+        <p>Remote work opportunities surged in the U.S. during the Covid-19 pandemic. And while the rate of remote work
+          has tapered off since its peak in the late spring of 2020, it remains well above pre-pandemic levels.</p>
+
+        <!-- Create additional elements to display the current time period -->
+        <div class="row">
+          <div class="col-md-12 text-center">Currently showing
+            <span id="time-period-min" class="selected-date">start</span>
+              through
+            <span id="time-period-max" class="selected-date">end</span>
+          </div>
         </div>
+
+        <!-- Visualization Placeholder -->
+        <div id="totals-vis"></div>
+        <!-- <img src="images/screenshot_totals.png" style="height: 65vh; margin:2.5em;"> -->
+      </div>
     </div>
     <!-- Third Page -->
     <div class="section" id="sect3">
       <!-- content here -->
       <h1>Remote Work by Demographics</h1>
       <div id="hook">
-        <p>In order to understand whether or not remote work is equitable, let's look at the breakdown of remote workers by different demographics. Click on the visualization to learn more.</p>
+        <p>But were remote opportunities available equitably?</p>
+        <p>In order to understand whether or not remote work is equitable, let's look at the breakdown of remote workers
+          by different demographics. <b>Click on individual categories to learn more.</b></p>
         <!-- Visualization Placeholder -->
         <div class="row">
           <div class="col-3">
@@ -53,56 +69,132 @@
     <div class="section" id="sect4">
       <!-- content here -->
       <h1>Remote Equity</h1>
-      <h2>Despite the overall rise in workplace flexibility, not every U.S. worker was equally able to participate in the remote work boon.</h2>
+      <h2>Despite the overall rise in workplace flexibility, not every U.S. worker was equally able to participate in
+        the remote work boon.</h2>
       <!-- Visualization -->
       <div class="slide">
-        <div id="gender-vis"><h3>While there are more men in the workforce, a higher percentage of female workers worked from home during the pandemic.</h3></div>
-        <div class="bothArrow"> Use the → arrow key to see additional visualizations.</div>
+        <div id="gender-vis">
+          <h3>While there are more men in the workforce, a higher percentage of female workers worked from home during
+            the pandemic.</h3>
+
+            <!-- Create additional elements to display the current time period -->
+            <div class="row">
+              <div class="col-md-12 text-center">Currently showing
+                <span id="time-period-min-gender" class="selected-date">5/1/2020</span>
+                  through
+                <span id="time-period-max-gender" class="selected-date">9/1/2022</span>
+                <br/>To see a specific time frame, select it on the <a href="#page1">Total Remote Work Visualization</a>.
+              </div>
+            </div>
+
+        </div>
+        <div class="bothArrow"><a href="#page3/3" class="arrowLink"> ←  </a> See additional visualizations. <a href="#page3/1" class="arrowLink">  → </a></div>
       </div>
       <div class="slide">
-        <div id="age-vis"><h3>The oldest (65+) and youngest (16-24) workers were least likely to work remotely.</h3></div>
-        <div class="bothArrow">Use the ← and → arrow keys to see additional visualizations.</div>
+        <div id="age-vis">
+          <h3>The oldest (65+) and youngest (16-24) workers were least likely to work remotely.</h3>
+
+          <!-- Create additional elements to display the current time period -->
+          <div class="row">
+            <div class="col-md-12 text-center">Currently showing
+              <span id="time-period-min-age" class="selected-date">start</span>
+                through
+              <span id="time-period-max-age" class="selected-date">end</span>
+              <br/>To see a specific time frame, select it on the <a href="#page1">Total Remote Work Visualization</a>.
+            </div>
+          </div>
+
+        </div>
+        <div class="bothArrow"><a href="#page3" class="arrowLink"> ←  </a> See additional visualizations. <a href="#page3/2" class="arrowLink">  → </a></div>
       </div>
       <div class="slide">
-        <div id="edu-vis"><h3>Workers with bachelor's degrees were most likely to work remotely.</h3></div>
-        <div class="bothArrow">Use the ← and → arrow keys to see additional visualizations.</div>
+        <div id="edu-vis">
+          <h3>Workers with bachelor's degrees were most likely to work remotely.</h3>
+
+          <!-- Create additional elements to display the current time period -->
+          <div class="row">
+            <div class="col-md-12 text-center">Currently showing
+              <span id="time-period-min-edu" class="selected-date">5/1/2020</span>
+                through
+              <span id="time-period-max-edu" class="selected-date">9/1/2022</span>
+              <br/>To see a specific time frame, select it on the <a href="#page1">Total Remote Work Visualization</a>.
+            </div>
+          </div>
+
+        </div>
+        <div class="bothArrow"><a href="#page3/1" class="arrowLink"> ←  </a> See additional visualizations. <a href="#page3/3" class="arrowLink">  → </a></div>
       </div>
       <div class="slide">
-        <div id="race-vis"><h3>While there were more white remote workers overall, Asian workers were the most likely to work remotely.</h3></div>
-        <div class="bothArrow">Use the ← arrow keys to see additional visualizations.</div>
+        <div id="race-vis">
+          <h3>While there were more white remote workers overall, Asian workers were the most likely to work remotely.
+          </h3>
+
+          <!-- Create additional elements to display the current time period -->
+          <div class="row">
+            <div class="col-md-12 text-center">Currently showing
+              <span id="time-period-min-race" class="selected-date">start</span>
+              through
+              <span id="time-period-max-race" class="selected-date">end</span>
+              <br/>To see a specific time frame, select it on the <a href="#page1">Total Remote Work Visualization</a>.
+            </div>
+          </div>
+
+        </div>
+        <div class="bothArrow"><a href="#page3/2" class="arrowLink"> ←  </a> See additional visualizations. <a href="#page3" class="arrowLink">  → </a></div>
+      </div>
+    </div>
+    <!-- Next Steps Page -->
+    <div class="section" id="ctaPage">
+      <h1>Take Action</h1>
+      <div class="row">
+        <div class="col-md-12 text-center">
+      <h3>It's up to each of us to continue to push towards greater equity, diversity, and inclusion in the workplace — including in flexible workplaces.</h3>
+      <p>How can you advocate for flexible workplace equality?</p>
+      <img src="images/flowers.gif" style="height: 25vh; margin:2.5em;">
+      <p>“It is about workplace flexibility. It’s about giving our associates the opportunity to be who they are as an individual, whether that is a community member, a spouse or parent, or anything in between.”</p><p>– Amy Freshman,<br/> Senior Director, Global Workforce Enablement, ADP</p>
+        </div>
       </div>
     </div>
     <!-- About Page -->
     <div class="section" id="aboutPage">
-    <!-- content here -->
+      <!-- content here -->
       <h1>About Team Remote Work</h1>
       <div class="row">
         <div class="col-sm-4 text-center">
           <h3>Maggie L.</h3>
-          <p>Maggie is from California, but currently lives in Hong Kong. She is pursuing an ALM in Data Science. In her spare time, she is an aspiring Ironman triathlete but hasn't yet competed in a race thanks to the Covid-19 pandemic.</p>
+          <p>Maggie is from California, but currently lives in Hong Kong. She is pursuing an ALM in Data Science. In her
+            spare time, she is an aspiring Ironman triathlete but hasn't yet competed in a race thanks to the Covid-19
+            pandemic.</p>
         </div>
         <div class="col-sm-4 text-center">
           <h3>Lisa M.</h3>
-          <p>Lisa is from Florida. She is pursuing an ALM in Digital Media Design. She is an animal fan, and black cats are her favorite animal.</p>
+          <p>Lisa is from Florida. She is pursuing an ALM in Digital Media Design. She is an animal fan, and black cats
+            are her favorite animal.</p>
         </div>
         <div class="col-sm-4 text-center">
-        <h3>Brooke P.</h3>
-        <p>Brooke is from Virginia and is pursuing an ALM in Digital Media Design. In the past 24 months, she has lived in three different U.S. states.</p>
+          <h3>Brooke P.</h3>
+          <p>Brooke is from Virginia and is pursuing an ALM in Digital Media Design. In the past 24 months, she has
+            lived in three different U.S. states.</p>
         </div>
       </div>
     </div>
     <!-- Sources Page -->
     <div class="section" id="sourcePage">
-    <!-- content here -->
+      <!-- content here -->
       <h1>Data Sources</h1>
       <p>The data for this project was collected by the U.S. Bureau of Labor Statistics.</p>
-      <p>The questions were incorporated into the Current Population Survey to "help gauge the effects of the coronavirus (COVID-19) pandemic on the labor market" and were collected monthly from May 2020 through September 2022.</p>
-      <p>The complete data set can be viewed on the <a href="https://www.bls.gov/cps/effects-of-the-coronavirus-covid-19-pandemic.htm" target="_blank">BLS site</a>.
-      <img src="images/flowers.gif" style="float: right; height: 65vh; margin:2.5em;">
+      <p>The questions were incorporated into the Current Population Survey to "help gauge the effects of the
+        coronavirus (COVID-19) pandemic on the labor market" and were collected monthly from May 2020 through September
+        2022.</p>
+      <p>The complete data set can be viewed on the <a
+          href="https://www.bls.gov/cps/effects-of-the-coronavirus-covid-19-pandemic.htm" target="_blank">BLS site</a>.
+        <img src="images/flowers.gif" style="float: right; height: 65vh; margin:2.5em;">
     </div>
   </div>
   <!--Add Bootstrap-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
   <!--Add D3-->
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <!-- Add fullPage.js -->
@@ -116,18 +208,19 @@
   <script type="text/javascript" src="js/agevis.js"></script>
   <script type="text/javascript" src="js/beehiveVis.js"></script>
   <!-- Initialize fullPage-->
-<script>
+  <script>
     var myFullpage = new fullpage('#fullpage', {
-        // select options
-        anchors: ['Home', 'page1', 'page2', 'page3', 'page4', 'about', 'dataSource'],
-        // set autoScrolling to false if story boxes need vertical scrolling
-        navigation: true,
-        //licenseKey: 'gplv3-license',
-        controlArrows: true,
-        //scrollHorizontally: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['Home', 'Page 1', 'Page 2', 'Page 3', 'Page 4', 'About', 'Data Source']
+      // select options
+      anchors: ['Home', 'page1', 'page2', 'page3', 'page4', 'about', 'dataSource'],
+      // set autoScrolling to false if story boxes need vertical scrolling
+      navigation: true,
+      //licenseKey: 'gplv3-license',
+      controlArrows: true,
+      //scrollHorizontally: true,
+      navigationPosition: 'right',
+      navigationTooltips: ['Home', 'Total Remote Work', 'Overall Remote Work Demographics', 'Detailed Visualizations', 'Next Steps', 'About', 'Data Source']
     });
-</script>
+  </script>
 </body>
+
 </html>
