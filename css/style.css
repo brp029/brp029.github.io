@@ -1,0 +1,65 @@
+body {
+  padding: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+  background-color: #acc9f4;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1.5em;
+  color: #569873;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: .3em;
+  margin-left: 2em;
+  font-size: 1.4em;
+  color: #0074D9;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+}
+
+p {
+  margin-left: 2.1em;
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+
+a {
+  color: #0074D9;
+}
+
+.mybutton {
+	margin-top: 1.5em;
+	margin-bottom: 2em;
+	width: 100%;
+}
+
+#gameboard {
+	display: block;
+	width: 95%;
+	margin: auto;
+}
+
+#whoseTurn {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.letters {
+	font-size: 5em;
+}
+
+.boxes {
+	float: left;
+	width: 33%;
+	height: 8em;
+	border: 1px solid black;
+	text-align: center;
+	margin: auto;
+}
